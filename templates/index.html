@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+index
+
+<form action="/" method="POST" enctype="multipart/form-data">
+    <p>検索対象を選択してください</p>
+    <input type="file" name="searched">
+    <p>検索キーワードを選択してください</p>
+    <input type="file" name="keywords">
+    <p>
+    <input type="submit" value="アップロード">
+    </p>
+</form>
+    
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+<p>アップロード完了</p>
+<p><a href={{ url_for('index') }}>アップロードページへ</a></p>
+<p>キーワード出現数</p>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>キーワード</th>
+        <th>出現数</th>
+    </tr>
+{% for i in nos %}
+<tr>
+    <td>{{ keywords[i] }}</td>
+    <td>{{ results[i] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+    
+{% endblock %}
